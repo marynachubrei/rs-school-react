@@ -1,0 +1,26 @@
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #1f2b56;
+  font-size: 1rem;
+  box-shadow: 0 0 2px #1f2b56;
+  line-height: 20px;
+
+  &:hover {
+    box-shadow: 0 0 10px #1f2b56;
+  }
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px #1f2b56;
+}

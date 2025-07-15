@@ -1,0 +1,13 @@
+.product-grid {
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  height: calc(100vh - 200px);
+
+  &-wrapper {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+  }
+}
