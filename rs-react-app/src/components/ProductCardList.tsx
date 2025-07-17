@@ -12,9 +12,13 @@ export default class ProductCardList extends Component<ProductListProps> {
     const { productList } = this.props;
     return (
       <div className="product-grid-wrapper">
-        <div className="product-grid">
+        <div className="product-grid" data-testid="product-list">
           {productList.map((product: Product) => (
-            <ProductCard key={product.id} card={product} />
+            <ProductCard
+              data-testid="product-card"
+              key={product.id}
+              card={product}
+            />
           ))}
         </div>
       </div>
