@@ -18,6 +18,7 @@ export class Search extends Component<SearchProps> {
           placeholder="Enter Product Name"
           className="search-input"
           value={searchQuery}
+          data-testid="search-input"
           onChange={onHandleInputChange}
         />
         <button type="submit" className="search-button">
@@ -27,6 +28,7 @@ export class Search extends Component<SearchProps> {
           <button
             type="button"
             className="clear-button"
+            data-testid="clear-button"
             onClick={this.props.onClearSearch}
           >
             Clear

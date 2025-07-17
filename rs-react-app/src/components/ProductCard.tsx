@@ -13,7 +13,7 @@ export default class ProductCard extends Component<ProductCardProps> {
   render() {
     const { card } = this.props;
     return (
-      <div className="product-card">
+      <div className="product-card" data-testid="product-card">
         <div className="product-info">
           <h3>{card.title}</h3>
           <p>{card.description}</p>
